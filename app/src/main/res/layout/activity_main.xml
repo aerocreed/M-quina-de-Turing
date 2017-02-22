@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_height="match_parent" android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_margin="20dp"
+        android:weightSum="4">
+        <LinearLayout
+            android:layout_height="0dp"
+            android:layout_width="match_parent"
+            android:layout_weight="1" android:gravity="top">
+            <EditText
+                android:textSize="22sp"
+                android:layout_gravity="center_horizontal"
+                android:hint="FUNÇÃO DE TRANSIÇÃO"
+                android:id="@+id/txtv_func_transicao"
+                android:layout_width="wrap_content"
+                android:padding="20dp"
+                android:cacheColorHint="#00000000"
+                android:focusableInTouchMode="true"
+                android:scrollbars="none"
+                android:drawSelectorOnTop="false"
+                android:dividerHeight="0px"
+                android:footerDividersEnabled="true"
+                android:headerDividersEnabled="true"
+                android:layout_span="3"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_height="0dp"
+            android:layout_width="match_parent"
+            android:layout_weight="3">
+            <ListView android:id="@+id/list"
+                android:layout_width="match_parent"
+                android:cacheColorHint="#00000000"
+                android:focusableInTouchMode="true"
+                android:layout_marginTop="10sp"
+                android:layout_marginLeft="10sp"
+                android:layout_marginRight="10sp"
+                android:drawSelectorOnTop="false"
+                android:dividerHeight="4px"
+                android:footerDividersEnabled="true"
+                android:headerDividersEnabled="true"
+                android:layout_span="3"
+                android:layout_height="match_parent" />
+
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
